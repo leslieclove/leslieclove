@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leslie C. Love, Ph.D.</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/home.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <script src="/app.js"></script>
+</head>
+<body>
+    <header>
+        <a href="/index.html" style="text-decoration: none; color: white;">
+            <h1>Leslie C. Love, Ph.D.</h1>
+            <h2>Licensed Clinical Psychologist</h2>
+        </a> 
+    </header>
+    <span></span>
+    <div class="spacer"></div>
+
+    <!-- <nav class="navbar">
+        <div class="menu-toggle" id="mobile-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div class="nav-links" id="nav-links">
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </nav> -->
+       
+    <div class="parallax">
+        <div>
+            <h3>Supporting Your Journey to Wellness</h3>
+        </div>
+        <div id="navbarContainer">
+            <nav class="navbar">
+                <div class="nav-links" id="nav-links">
+                    <button class="sectionButton" onclick="showSection('section1')">About</button>
+                    <button class="sectionButton" onclick="showSection('section2')">Services</button>
+                    <button class="sectionButton" onclick="showSection('section3')">FAQs</button>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <div class="content">
+        <section id="section1" class="active">
+            <h2>About Dr. Love</h2>
+            <p>Dr. Leslie C. Love is a licensed clinical psychologist with over 25 years of experience helping individuals navigate life transitions, manage anxiety and depression, and build healthier relationships. Her compassionate and evidence-based approach empowers clients to achieve emotional well-being.</p>
+            <button id="toggleButton" onclick="toggleMore()">Show More</button>
+            <div id="moreContent">
+                <p>Lorem ipsum dolor sit amet, ea eam brute appellantur. Eu mea dicant dicunt facilisi, quo in possit utroque maiestatis, mel ad veri dolore necessitatibus. No usu commodo tamquam. No vix numquam omittam, laudem noster instructior eu vis, iisque aperiri ad vel. Vis fierent voluptaria ea, ne vel facer vocent.
+                </p>
+                <p>Ex his nisl homero, volumus fastidii ius ne. Eos nominati honestatis ei, detracto laboramus has ne. Habemus mandamus et nam, ipsum feugait splendide no his. Mutat scaevola cum te, quaeque liberavisse ei nam. Per nominati qualisque conclusionemque ne, vis in ipsum primis elaboraret, mei te laudem euismod indoctum.
+                </p>
+                <p>Id pri partem signiferumque, at cum animal tamquam liberavisse, vim prompta nominavi in. Id delenit aliquando quo, vidit legere meliore nam ei, labore eirmod ius no. Amet partem in eam, at nam falli consul inciderint. Ad vim mucius laoreet appareat, quo in case percipit necessitatibus. Ei luptatum erroribus patrioque duo.
+                </p>
+                <p>Salutandi erroribus ei has. Eos at elitr nullam argumentum, ad oporteat definitionem vim. Sed voluptaria dissentiet id. Putent facilisi necessitatibus an his, inermis persecuti definiebas ei cum, at minim scripta neglegentur per. Vel movet omnes quaerendum ne, eum te lorem officiis indoctum.
+                </p>
+                <p>Patrioque deseruisse cu quo, movet veritus eos te. Eu fabulas singulis pro, eu inani alienum deserunt per. Mediocrem scripserit no vim. Te modo voluptatum per. Et posse quando est. Eam ea summo aperiri perfecto, erat prima lucilius ad mea, idque omnes eu nam.
+                </p>         
+            </div>
+        </section>
+        
+        <section id="section2">
+            <h2>Services</h2>
+                <ul>
+                    <li>Individual Therapy</li>
+                    <li>Couples Counseling</li>
+                    <li>Stress & Anxiety Management</li>
+                    <li>Life Coaching</li>
+                    <li>Online Therapy Options</li>
+                </ul>
+        </section>
+      
+        <section id="section3">
+            <h2>Frequently Asked Questions</h2>
+            <div class="faq-item">
+    <h4>1. What is Lorem Ipsum?</h4>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vitae magna at sapien dapibus viverra. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+  </div>
+
+  <div class="faq-item">
+    <h4>2. How does the process work?</h4>
+    <p>Nullam euismod, nunc ut laoreet dapibus, urna ligula tincidunt massa, ac congue est purus vel tellus. Sed hendrerit, risus nec tincidunt ultrices, orci turpis suscipit risus, et fermentum ipsum erat ut libero.</p>
+  </div>
+
+  <div class="faq-item">
+    <h4>3. Do I need to prepare anything beforehand?</h4>
+    <p>Integer non mi sed purus sodales posuere. Aenean feugiat lobortis purus, non cursus sapien tincidunt ut. Ut vel eros id sapien finibus convallis non in ligula.</p>
+  </div>
+
+  <div class="faq-item">
+    <h4>4. How long does each session last?</h4>
+    <p>Morbi at massa ac lorem posuere suscipit. Aliquam erat volutpat. Nunc non pretium erat. Proin viverra lectus nec diam dignissim, a tempus libero finibus.</p>
+  </div>
+
+  <div class="faq-item">
+    <h4>5. Is my information confidential?</h4>
+    <p>Etiam feugiat, sapien vel dignissim cursus, arcu odio gravida neque, id ultrices est arcu ut neque. Nulla vel rhoncus libero, non eleifend ipsum.</p>
+  </div>
+
+  <div class="faq-item">
+    <h4>6. What if I need to cancel or reschedule?</h4>
+    <p>Vestibulum vel facilisis tortor, sed dapibus ante. Sed at metus nec metus sagittis fringilla. Fusce laoreet, risus a feugiat gravida, metus felis imperdiet arcu, vel cursus elit erat ut sapien.</p>
+  </div>
+        </section>
+    </div>
+    <div class="spacer"></div>
+        <div class="content">
+            <h2>Contact</h2>
+              <p>Phone: (555) 123-4567</p>
+              <p>Email: <a href="mailto:contact@leslielovephd.com">contact@leslielovephd.com</a></p>
+              <p>Office Location: 123 Wellness Way, Calm City, ST 00000</p>
+        </div>
+    <footer>
+            Copyright &copy; 2025 Leslie C. Love. All rights reserved.
+    </footer>
+    <script>
+        // Toggle mobile menu
+        const menuToggle = document.getElementById('mobile-menu');
+        const navLinks = document.getElementById('nav-links');
+    
+        menuToggle.addEventListener('click', () => {
+          navLinks.classList.toggle('show');
+        });
+      </script>
+</body>
+</html>
