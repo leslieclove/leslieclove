@@ -34,6 +34,7 @@
             font-weight: 600;
             letter-spacing: 0.04em;
             color: var(--cream);
+            -webkit-text-stroke: 0.3px white;
         }
         header h2 {
             font-family: 'Inter', sans-serif;
@@ -120,6 +121,7 @@
             font-family: 'Bodoni Moda', serif;
             font-size: clamp(1.5rem, 3vw, 2.2rem);
             color: var(--dark);
+            -webkit-text-stroke: 0.3px var(--dark);
             margin-bottom: 1.5rem;
             padding-bottom: 0.75rem;
             border-bottom: 2px solid var(--accent);
@@ -140,6 +142,7 @@
             font-family: 'Bodoni Moda', serif;
             font-size: 1.2rem;
             color: var(--mid);
+            -webkit-text-stroke: 0.3px var(--mid);
             margin-bottom: 0.8rem;
         }
         .card p { margin-bottom: 0.8rem; }
