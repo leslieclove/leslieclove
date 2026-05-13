@@ -4,131 +4,141 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Leslie C. Love, Ph.D.</title>
-    <link rel="stylesheet" href="/css/style.css">
-    <link rel="stylesheet" href="/css/home.css">
+    <link rel="icon" href="images/natural-mode-svgrepo-com.svg"
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
-    <script src="/app.js"></script>
+    <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
+
     <header>
-        <a href="/index.html" style="text-decoration: none; color: white;">
+        <a href="index.html">
             <h1>Leslie C. Love, Ph.D.</h1>
             <h2>Licensed Clinical Psychologist</h2>
-        </a> 
+        </a>
     </header>
-    <span></span>
-    <div class="spacer"></div>
 
-    <!-- <nav class="navbar">
-        <div class="menu-toggle" id="mobile-menu">
-            <span></span>
-            <span></span>
-            <span></span>
-        </div>
-        <div class="nav-links" id="nav-links">
-            <a href="#about">About</a>
-            <a href="#services">Services</a>
-            <a href="#contact">Contact</a>
-        </div>
-    </nav> -->
-       
-    <div class="parallax">
-        <div>
-            <h3>Supporting Your Journey to Wellness</h3>
-        </div>
-        <div id="navbarContainer">
-            <nav class="navbar">
-                <div class="nav-links" id="nav-links">
-                    <button class="sectionButton" onclick="showSection('section1')">About</button>
-                    <button class="sectionButton" onclick="showSection('section2')">Services</button>
-                    <button class="sectionButton" onclick="showSection('section3')">FAQs</button>
-                </div>
-            </nav>
-        </div>
+    <div class="hero">
+        <h3>Supporting Your Journey to Wellness</h3>
+        <h4>Dr. Leslie C. Love is a licensed clinical psychologist with over 30 years of experience helping individuals navigate life transitions, manage anxiety and depression, and build healthier relationships.</h4>
+        <nav class="nav-tabs">
+            <button class="tab-btn active" onclick="showSection('about', this)">About</button>
+            <button class="tab-btn" onclick="showSection('services', this)">Services</button>
+            <button class="tab-btn" onclick="showSection('faqs', this)">FAQs</button>
+        </nav>
     </div>
-    <div class="content">
-        <section id="section1" class="active">
+
+    <div class="content-area">
+
+        <!-- ── ABOUT ── -->
+        <div id="about" class="section-panel active">
             <h2>About Dr. Love</h2>
-            <p>Dr. Leslie C. Love is a licensed clinical psychologist with over 25 years of experience helping individuals navigate life transitions, manage anxiety and depression, and build healthier relationships. Her compassionate and evidence-based approach empowers clients to achieve emotional well-being.</p>
-            <button id="toggleButton" onclick="toggleMore()">Show More</button>
+            <p>Welcome to my website! My goal for this space is to give you the information you might need in making decisions about your emotional health and treatment, and about my style as a therapist.</p>
+            <button id="toggleBtn" onclick="toggleMore()">Read More</button>
             <div id="moreContent">
-                <p>Lorem ipsum dolor sit amet, ea eam brute appellantur. Eu mea dicant dicunt facilisi, quo in possit utroque maiestatis, mel ad veri dolore necessitatibus. No usu commodo tamquam. No vix numquam omittam, laudem noster instructior eu vis, iisque aperiri ad vel. Vis fierent voluptaria ea, ne vel facer vocent.
-                </p>
-                <p>Ex his nisl homero, volumus fastidii ius ne. Eos nominati honestatis ei, detracto laboramus has ne. Habemus mandamus et nam, ipsum feugait splendide no his. Mutat scaevola cum te, quaeque liberavisse ei nam. Per nominati qualisque conclusionemque ne, vis in ipsum primis elaboraret, mei te laudem euismod indoctum.
-                </p>
-                <p>Id pri partem signiferumque, at cum animal tamquam liberavisse, vim prompta nominavi in. Id delenit aliquando quo, vidit legere meliore nam ei, labore eirmod ius no. Amet partem in eam, at nam falli consul inciderint. Ad vim mucius laoreet appareat, quo in case percipit necessitatibus. Ei luptatum erroribus patrioque duo.
-                </p>
-                <p>Salutandi erroribus ei has. Eos at elitr nullam argumentum, ad oporteat definitionem vim. Sed voluptaria dissentiet id. Putent facilisi necessitatibus an his, inermis persecuti definiebas ei cum, at minim scripta neglegentur per. Vel movet omnes quaerendum ne, eum te lorem officiis indoctum.
-                </p>
-                <p>Patrioque deseruisse cu quo, movet veritus eos te. Eu fabulas singulis pro, eu inani alienum deserunt per. Mediocrem scripserit no vim. Te modo voluptatum per. Et posse quando est. Eam ea summo aperiri perfecto, erat prima lucilius ad mea, idque omnes eu nam.
-                </p>         
+                <p>With over 30 years of experience, my primary motivating factor has been my deep-seated passion in walking with people along their life path, helping them to leave behind old negative patterns, face their emotions more authentically, and make positive changes in their life that move them forward to a more peaceful existence.</p>
+                <p>I respect my clients deeply, as I feel it takes great courage to decide to face your problems and fears, and to reach out for help. My therapeutic style is based on intuition and adaptation, allowing space for following trails that often lead to good insights. It is important for me to hear my clients' stories and to understand the context of the difficulties they face.</p>
             </div>
-        </section>
-        
-        <section id="section2">
-            <h2>Services</h2>
-                <ul>
-                    <li>Individual Therapy</li>
-                    <li>Couples Counseling</li>
-                    <li>Stress & Anxiety Management</li>
-                    <li>Life Coaching</li>
-                    <li>Online Therapy Options</li>
-                </ul>
-        </section>
-      
-        <section id="section3">
-            <h2>Frequently Asked Questions</h2>
-            <div class="faq-item">
-    <h4>1. What is Lorem Ipsum?</h4>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vitae magna at sapien dapibus viverra. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
-  </div>
 
-  <div class="faq-item">
-    <h4>2. How does the process work?</h4>
-    <p>Nullam euismod, nunc ut laoreet dapibus, urna ligula tincidunt massa, ac congue est purus vel tellus. Sed hendrerit, risus nec tincidunt ultrices, orci turpis suscipit risus, et fermentum ipsum erat ut libero.</p>
-  </div>
+            <div class="card">
+                <h3>Training &amp; Background</h3>
+                <p>I received my Ph.D. in 1994 and was licensed in Michigan in 1996. I work primarily with adults who have concerns regarding depression, anxiety, life transition &amp; adjustments, caregiving, and chronic illness and grief.</p>
+                <p>My training was in evidence-based cognitive/behavioral therapy, and although this type of therapy is the basis of my approach, I have come to appreciate other traditions within the field. This has yielded positive results as my methods are able to adapt based on the unique scenarios my clients experience.</p>
+            </div>
 
-  <div class="faq-item">
-    <h4>3. Do I need to prepare anything beforehand?</h4>
-    <p>Integer non mi sed purus sodales posuere. Aenean feugiat lobortis purus, non cursus sapien tincidunt ut. Ut vel eros id sapien finibus convallis non in ligula.</p>
-  </div>
+            <div class="card">
+                <h3>Telehealth</h3>
+                <p>As with most things, there are pros and cons with Telehealth. Although I always enjoyed meeting with my clients in person pre-pandemic, since then I have grown to like the convenience that video sessions offer for myself and my clients. I find that a personal feeling of connection is still there, and my clients don't need to schedule extra time for a commute to an office.</p>
+                <p>This capability has also been very helpful for my clients with limited mobility or chronic illness. Requirements for telehealth include having a computer, tablet, or smartphone with a built-in camera, decent Wi-Fi, and privacy in your home.</p>
+            </div>
 
-  <div class="faq-item">
-    <h4>4. How long does each session last?</h4>
-    <p>Morbi at massa ac lorem posuere suscipit. Aliquam erat volutpat. Nunc non pretium erat. Proin viverra lectus nec diam dignissim, a tempus libero finibus.</p>
-  </div>
-
-  <div class="faq-item">
-    <h4>5. Is my information confidential?</h4>
-    <p>Etiam feugiat, sapien vel dignissim cursus, arcu odio gravida neque, id ultrices est arcu ut neque. Nulla vel rhoncus libero, non eleifend ipsum.</p>
-  </div>
-
-  <div class="faq-item">
-    <h4>6. What if I need to cancel or reschedule?</h4>
-    <p>Vestibulum vel facilisis tortor, sed dapibus ante. Sed at metus nec metus sagittis fringilla. Fusce laoreet, risus a feugiat gravida, metus felis imperdiet arcu, vel cursus elit erat ut sapien.</p>
-  </div>
-        </section>
-    </div>
-    <div class="spacer"></div>
-        <div class="content">
-            <h2>Contact</h2>
-              <p>Phone: (555) 123-4567</p>
-              <p>Email: <a href="mailto:contact@leslielovephd.com">contact@leslielovephd.com</a></p>
-              <p>Office Location: 123 Wellness Way, Calm City, ST 00000</p>
+            <div class="card">
+                <h3>Payment &amp; Insurance</h3>
+                <p>As a Michigan licensed Ph.D. psychologist, I am able to accept most insurance plans. At times over the years, I have stopped working with certain plans due to a history of mistakes, inconsistent payment, etc. If I do not accept your plan, please inquire about my rate for private pay clients.</p>
+                <p><strong>How to get started:</strong> Call or text me to let me know a bit about you and what has caused you to reach out, and what you are looking for in therapy. Ask any questions you have about insurance. If I feel that my style or skills are not the best fit for your concerns, I will do my best to provide solid referrals to practices or therapists that are well-established and have good reputations.</p>
+            </div>
         </div>
+
+        <!-- ── SERVICES ── -->
+        <div id="services" class="section-panel">
+            <h2>Services</h2>
+            <p>I offer a range of services tailored to meet the unique needs of each client. All services are available via secure telehealth video sessions.</p>
+            <ul class="services-list">
+                <li>Individual Therapy</li>
+                <li>Depression &amp; Anxiety</li>
+                <li>Life Transitions &amp; Adjustment</li>
+                <li>Caregiving Support</li>
+                <li>Chronic Illness &amp; Grief</li>
+                <li>Cognitive Behavioral Therapy</li>
+                <li>Telehealth / Online Therapy</li>
+                <li>Couples Counseling</li>
+            </ul>
+        </div>
+
+        <!-- ── FAQs ── -->
+        <div id="faqs" class="section-panel">
+            <h2>Frequently Asked Questions</h2>
+
+            <div class="faq-item">
+                <h4>What types of concerns do you work with?</h4>
+                <p>I work primarily with adults experiencing depression, anxiety, life transitions, adjustment challenges, caregiver stress, chronic illness, and grief. If you're unsure whether your concern is a good fit, feel free to reach out — I'm happy to talk it through.</p>
+            </div>
+
+            <div class="faq-item">
+                <h4>Do you offer telehealth sessions?</h4>
+                <p>Yes. I offer secure video sessions and have found them to be just as effective and connected as in-person meetings. You'll need a device with a camera, reliable Wi-Fi, and a private space. No special software is required beyond what I'll share with you at scheduling.</p>
+            </div>
+
+            <div class="faq-item">
+                <h4>Do you accept insurance?</h4>
+                <p>As a Michigan licensed Ph.D. psychologist, I accept most insurance plans. There are a small number of plans I no longer work with due to administrative issues. If I don't accept your plan, I can provide my private-pay rate. Feel free to ask about this when you reach out.</p>
+            </div>
+
+            <div class="faq-item">
+                <h4>What is your therapeutic approach?</h4>
+                <p>My foundation is evidence-based cognitive/behavioral therapy (CBT), but I draw from multiple traditions and adapt my approach to each client's unique situation. I place great importance on truly hearing your story and understanding the full context of the challenges you're facing.</p>
+            </div>
+
+            <div class="faq-item">
+                <h4>What if your practice isn't the right fit for me?</h4>
+                <p>If I feel that my skills or style aren't the best match for what you need, I will do my best to provide solid referrals to well-established practices and therapists with good reputations. Finding the right fit matters, and I want to help you get there.</p>
+            </div>
+
+            <div class="faq-item">
+                <h4>How do I get started?</h4>
+                <p>Simply call or text me. Tell me a bit about yourself, what brought you to reach out, and what you're looking for in therapy. We can also address any insurance questions at that time. I look forward to hearing from you.</p>
+            </div>
+        </div>
+
+    </div><!-- /content-area -->
+
+    <div class="contact-strip">
+        <h2>Contact</h2>
+        <p>Phone / Text: <a href="tel:9895761658">(989) 576-1658</a></p>
+        <p>Email: <a href="mailto:contact@leslielovephd.com">contact@leslielovephd.com</a></p>
+        <p>Office: 123 Wellness Way, Calm City, MI 00000</p>
+    </div>
+
     <footer>
-            Copyright &copy; 2025 Leslie C. Love. All rights reserved.
+        &copy; 2026 Leslie C. Love, Ph.D. &nbsp;|&nbsp; All rights reserved.
     </footer>
+
     <script>
-        // Toggle mobile menu
-        const menuToggle = document.getElementById('mobile-menu');
-        const navLinks = document.getElementById('nav-links');
-    
-        menuToggle.addEventListener('click', () => {
-          navLinks.classList.toggle('show');
-        });
-      </script>
+        function showSection(id, btn) {
+            document.querySelectorAll('.section-panel').forEach(p => p.classList.remove('active'));
+            document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+            document.getElementById(id).classList.add('active');
+            if (btn) btn.classList.add('active');
+        }
+
+        function toggleMore() {
+            const more = document.getElementById('moreContent');
+            const btn  = document.getElementById('toggleBtn');
+            more.classList.toggle('open');
+            btn.textContent = more.classList.contains('open') ? 'Read Less' : 'Read More';
+        }
+    </script>
+
 </body>
 </html>
